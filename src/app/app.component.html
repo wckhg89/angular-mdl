@@ -1,18 +1,28 @@
-<h1>
-  {{title}}
-</h1>
-<mdl-spinner single-color active></mdl-spinner>
-<br>
-<!-- Colored raised button -->
-<button mdl-button mdl-button-type="raised" mdl-colored>
-  Button
-</button>
-<!-- Accent-colored raised button -->
-<button mdl-button mdl-button-type="raised" mdl-colored="accent">
-  Button
-</button>
-<!-- Accent-colored raised button with ripple -->
-<button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple>
-  Button
-</button>
+<div class="demo-container" mdl-shadow="2">
+  <mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed>
+    <mdl-layout-header>
+      <mdl-layout-header-row>
+        <mdl-layout-title>{{title}}</mdl-layout-title>
+        <mdl-layout-spacer></mdl-layout-spacer>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" >Link</a>
+          <a class="mdl-navigation__link" >Link</a>
+          <a class="mdl-navigation__link" >Link</a>
+        </nav>
+      </mdl-layout-header-row>
+    </mdl-layout-header>
+    <mdl-layout-drawer>
+      <mdl-layout-title>{{title}}</mdl-layout-title>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" >Link</a>
+        <a class="mdl-navigation__link" >Link</a>
+        <a class="mdl-navigation__link" >Link</a>
+      </nav>
+    </mdl-layout-drawer>
+    <mdl-layout-content>
+      <!-- Your content goes here -->
+    </mdl-layout-content>
+  </mdl-layout>
+</div>
 
